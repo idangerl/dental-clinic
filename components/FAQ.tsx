@@ -3,7 +3,7 @@
 
 import { useState } from 'react'
 import { ChevronDown, MessageCircle } from 'lucide-react'
-
+import { WhatsAppConsultoriosLink } from '@/lib/site-data'
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
@@ -368,7 +368,9 @@ export function FAQ() {
               </div>
 
               <a
-                href="#contact"
+                  href={WhatsAppConsultoriosLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
                 className="
                   inline-flex
                   items-center

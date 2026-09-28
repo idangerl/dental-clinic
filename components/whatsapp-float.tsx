@@ -3,6 +3,7 @@
 import { MessageCircle } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
+import { WhatsAppConsultoriosLink } from '@/lib/site-data'
 export function WhatsAppFloat() {
   const [visible, setVisible] = useState(false)
 
@@ -34,9 +35,9 @@ export function WhatsAppFloat() {
 
       {/* Botón */}
       <a
-  href="https://wa.me/59171234567"
-  target="_blank"
-  rel="noopener noreferrer"
+  href={WhatsAppConsultoriosLink}
+    target="_blank"
+    rel="noopener noreferrer"
   className="
     h-16
     w-16

@@ -1,0 +1,2 @@
+export const WhatsAppConsultoriosLink =
+  'https://wa.me/59169894933?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20me%20interesa%20tener%20una%20p%C3%A1gina%20web%20para%20mi%20consulta%20odontol%C3%B3gica.%20Me%20gustar%C3%ADa%20conocer%20los%20planes%2C%20dise%C3%B1os%20y%20precios.';

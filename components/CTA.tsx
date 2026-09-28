@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
-
+import { WhatsAppConsultoriosLink } from '@/lib/site-data'
 export function CTA() {
   return (
     <section id="cta" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
@@ -21,20 +21,24 @@ export function CTA() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button
-                size="lg"
-                className="bg-white hover:bg-white/90 text-primary rounded-full font-semibold h-12 px-8 flex items-center justify-center gap-2"
-              >
-                Reservar Consulta
-                <ArrowRight size={18} />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full font-semibold h-12 px-8 border-2 border-white text-white hover:bg-white/10 bg-transparent"
-              >
-                Más Información
-              </Button>
+             <a
+  href={WhatsAppConsultoriosLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white hover:bg-white/90 text-primary rounded-full font-semibold h-12 px-8 flex items-center justify-center gap-2 transition-all duration-300"
+>
+  Reservar Consulta
+  <ArrowRight size={18} />
+</a>
+
+<a
+ href={WhatsAppConsultoriosLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-full font-semibold h-12 px-8 border-2 border-white text-white hover:bg-white/10 bg-transparent flex items-center justify-center transition-all duration-300"
+>
+  Más Información
+</a>
             </div>
 
             <p className="text-sm text-white/80 pt-4">

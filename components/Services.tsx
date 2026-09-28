@@ -1,5 +1,5 @@
 'use client'
-
+import { WhatsAppConsultoriosLink } from '@/lib/site-data'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Sparkle, Smile, Crown, Lightbulb, Wind, Baby, Wrench, Scissors } from 'lucide-react'
 
@@ -89,10 +89,12 @@ export function Services() {
           <p className="text-lg text-muted-foreground max-w-lg mx-auto">
             Nuestro equipo está listo para ayudarte. Agenda tu cita hoy y comienza tu viaje hacia una sonrisa radiante.
           </p>
-          <Button className="bg-primary hover:bg-primary/90 text-white rounded-full font-semibold h-12 px-8 inline-flex items-center gap-2">
+          <a   href={WhatsAppConsultoriosLink}
+                          target="_blank"
+                          rel="noopener noreferrer" className="bg-primary hover:bg-primary/90 text-white rounded-full font-semibold h-12 px-8 inline-flex items-center gap-2">
             Agendar Ahora
             <ArrowRight size={18} />
-          </Button>
+          </a>
         </div>
       </div>
     </section>
